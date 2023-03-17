@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/SpaceGrotesk-VariableFont_wght.ttf");
+}
+.heading-xl {
+  @apply text-7xl;
+  @apply tracking-tight;
+  @apply font-bold;
+}
+
+.heading-l {
+  @apply text-5xl;
+  @apply leading-tighter;
+  @apply tracking-tight;
+  @apply font-bold;
+}
+
+.heading-m {
+  @apply text-2xl;
+  @apply font-bold;
+}
+
+.body-text {
+  @apply text-lg;
+  @apply font-medium;
+}
