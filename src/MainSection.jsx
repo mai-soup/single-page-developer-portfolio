@@ -1,10 +1,13 @@
 import Button from "./Button";
 import ContentContainer from "./ContentContainer";
+import skills from "./skills";
+import projects from "./projects";
 
 const Main = () => {
   return (
     <main className="text-white">
       <ContentContainer>
+        {/* BIO SECTION */}
         <section>
           <h1 className="heading-xl">
             Nice to meet you!
@@ -18,62 +21,39 @@ const Main = () => {
           </p>
           <Button>Contact me</Button>
         </section>
-        <section></section>
-        {`
-  
-  HTML
-  4 Years Experience
-  
-  CSS
-  4 Years Experience
-  
-  JavaScript
-  4 Years Experience
-  
-  Accessibility
-  4 Years Experience
-  
-  React
-  3 Years Experience
-  
-  Sass
-  3 Years Experience
-  
-  Projects
-  
-  Contact me
-  
-  Design portfolio
-  HTML CSS
-  View project
-  View code
-  
-  E-learning landing page
-  HTML CSS
-  View project
-  View code
-  
-  Todo web app
-  HTML CSS JavaScript
-  View project
-  View code
-  
-  Entertainment web app
-  HTML CSS JavaScript
-  View project
-  View code
-  
-  Memory Game
-  HTML CSS JavaScript
-  View project
-  View code
-  
-  Art gallery showcase
-  HTML CSS JavaScript
-  View project
-  View code
-  
-  `}
+        {/* SKILLS SECTION */}
+        <section className="flex flex-row w-full flex-wrap">
+          {skills.map(skill => (
+            <div
+              className="flex-1 basis-1/2 md:basis-1/3 my-4"
+              key={skill.title}
+            >
+              <h3 className="heading-m my-3">{skill.title}</h3>
+              <p className="body-text text-light-grey">
+                {skill.years} Years Experience
+              </p>
+            </div>
+          ))}
+        </section>
+        {/* PROJECTS SECTION */}
+        <section>
+          <div className="flex flex-row items-center justify-between">
+            <h2 className="heading-xl">Projects</h2>
+            <Button>Contact me</Button>
+          </div>
+          <div className="flex flex-row items-center flex-wrap">
+            {projects.map(project => (
+              <div className="flex-1 basis-1/2 my-2" key={project.title}>
+                <h3 className="heading-m">{project.title}</h3>
+                <p className="body-text text-light-grey">
+                  {project.technologies.join(", ")}
+                </p>
+                <Button>View project</Button>
+                <Button>View code</Button>
+              </div>
+            ))}
+          </div>
+        </section>
       </ContentContainer>
     </main>
   );
