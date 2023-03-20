@@ -18,6 +18,10 @@ module.exports = {
       lineHeight: {
         tighter: "1.16",
       },
+      content: {
+        circle: "url('/pattern-circle.svg')",
+        rings: "url('/pattern-rings.svg')",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

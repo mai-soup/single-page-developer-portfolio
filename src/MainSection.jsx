@@ -11,11 +11,9 @@ const Main = () => {
       <ContentContainer>
         {/* BIO SECTION */}
         <section className="grid grid-cols-6">
-          <img
-            src={profileDesktop}
-            alt="Profile Image"
-            className="col-start-4 col-end-7 row-start-1 justify-self-end -translate-y-28 -z-10"
-          />
+          <picture className="col-start-4 col-end-7 row-start-1 justify-self-end -translate-y-28 -z-10 before:content-circle before:absolute before:-left-16 before:top-96">
+            <img src={profileDesktop} alt="Profile Image" className="" />
+          </picture>
           <div className="col-start-1 col-end-5 row-start-1">
             <h1 className="heading-xl">
               Nice to meet you!
@@ -23,7 +21,7 @@ const Main = () => {
               I'm <span className="underline decoration-mint">Adam Keyes</span>.
             </h1>
 
-            <p className="body-text text-light-grey max-w-[50%]">
+            <p className="body-text text-light-grey max-w-[50%] before:content-rings before:absolute before:-left-11">
               Based in the UK, I'm a front-end developer passionate about
               building accessible web apps that users love.
             </p>
@@ -31,7 +29,7 @@ const Main = () => {
           </div>
         </section>
         {/* SKILLS SECTION */}
-        <section className="flex flex-row w-full flex-wrap">
+        <section className="flex flex-row w-full flex-wrap after:content-rings after:absolute after:-right-11">
           {skills.map(skill => (
             <div
               className="flex-1 basis-1/2 md:basis-1/3 my-4"
