@@ -7,10 +7,13 @@
   src: url("/SpaceGrotesk-VariableFont_wght.ttf");
 }
 
+html {
+  @apply overflow-x-hidden;
+}
+
 #root {
   @apply bg-darkest-grey;
-  @apply relative;
-  @apply -z-50;
+  @apply w-screen;
 }
 
 .heading-xl {

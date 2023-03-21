@@ -8,7 +8,7 @@ const icons = [githubIcon, linkedInIcon, twitterIcon, fmIcon];
 
 const LogoLinksContainer = () => {
   return (
-    <div className="text-white py-8">
+    <div className="text-white py-8 z-20 relative">
       <ContentContainer className="flex flex-row justify-between items-center">
         <div className="heading-m">adamkeyes</div>
         <div className="flex flex-row gap-8 mr-4">
