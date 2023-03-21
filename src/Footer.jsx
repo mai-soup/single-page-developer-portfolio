@@ -7,9 +7,9 @@ const inputClasses =
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-grey text-white">
+    <footer className="bg-dark-grey text-white pt-12">
       <ContentContainer>
-        <div className="flex flex-row justify-between py-4 gap-12">
+        <div className="flex flex-row justify-between pb-20 mb-3 gap-12 border-b-2 border-light-grey">
           <div className="basis-1/2 relative">
             <h2 className="mb-2 heading-xl">Contact</h2>
             <p className="body-text text-light-grey before:content-rings before:absolute before:-left-full before:bottom-12">
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           <div className="basis-1/2">
             <form action="">
-              <label className="block mb-4" htmlFor="name">
+              <label className="block mb-8" htmlFor="name">
                 <input
                   type="text"
                   name="name"
@@ -29,7 +29,7 @@ const Footer = () => {
                   className={inputClasses}
                 />
               </label>
-              <label className="block mb-4" htmlFor="email">
+              <label className="block mb-8" htmlFor="email">
                 <input
                   type="email"
                   name="email"
@@ -38,7 +38,7 @@ const Footer = () => {
                   className={inputClasses}
                 />
               </label>
-              <label className="block mb-4" htmlFor="message">
+              <label className="block mb-8" htmlFor="message">
                 <textarea
                   id="message"
                   name="message"
