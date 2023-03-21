@@ -10,9 +10,9 @@ const Footer = () => {
     <footer className="bg-dark-grey text-white">
       <ContentContainer>
         <div className="flex flex-row justify-between py-4 gap-12">
-          <div className="basis-1/2">
+          <div className="basis-1/2 relative">
             <h2 className="mb-2 heading-xl">Contact</h2>
-            <p className="body-text text-light-grey before:content-rings before:absolute before:-left-11 before:bottom-12">
+            <p className="body-text text-light-grey before:content-rings before:absolute before:-left-full before:bottom-12">
               I would love to hear about your project and how I could help.
               Please fill in the form, and I'll get back to you as soon as
               possible.

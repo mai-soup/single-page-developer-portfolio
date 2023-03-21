@@ -9,8 +9,6 @@
 
 #root {
   @apply bg-darkest-grey;
-  @apply relative;
-  @apply -z-50;
 }
 
 .heading-xl {

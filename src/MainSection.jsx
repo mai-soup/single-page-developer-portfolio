@@ -11,17 +11,17 @@ const Main = () => {
       <ContentContainer>
         {/* BIO SECTION */}
         <section className="grid grid-cols-6">
-          <picture className="col-start-4 col-end-7 row-start-1 justify-self-end -translate-y-28 -z-10 before:content-circle before:absolute before:-left-16 before:top-96">
+          <picture className="col-start-4 col-end-7 row-start-1 justify-self-end -translate-y-28 z-10 before:content-circle before:absolute before:-left-16 before:top-96">
             <img src={profileDesktop} alt="Profile Image" className="" />
           </picture>
-          <div className="col-start-1 col-end-5 row-start-1">
+          <div className="col-start-1 col-end-5 row-start-1 relative z-20">
             <h1 className="heading-xl">
               Nice to meet you!
               <br />
               I'm <span className="underline decoration-mint">Adam Keyes</span>.
             </h1>
 
-            <p className="body-text text-light-grey max-w-[50%] before:content-rings before:absolute before:-left-11">
+            <p className="body-text text-light-grey max-w-[50%] before:content-rings before:absolute before:-left-2/3">
               Based in the UK, I'm a front-end developer passionate about
               building accessible web apps that users love.
             </p>
